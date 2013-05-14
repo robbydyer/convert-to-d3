@@ -1,16 +1,18 @@
 {
-    "Real Name":"Robert",
-    "info":{
-        "hair":"brown",
-        "eyes":"brown",
-        "hobbies":[
-            "baseball",
-            "hockey"
+    "Robby":{
+        "Real Name":"Robert",
+        "info":{
+            "hair":"brown",
+            "eyes":"brown",
+            "hobbies":[
+                "baseball",
+                "hockey"
+            ]
+        },
+        "Stuff I hate":[
+            "rainy days",
+            "ignorance",
+            "magenta"
         ]
-    },
-    "Stuff I hate":[
-        "rain",
-        "ignorance",
-        "magenta"
-    ]
+    }
 }

@@ -10,3 +10,14 @@ Usage:
 convert_obj = ConvertToD3.new(data)  # data can either be ruby hash or raw json data
 convert_obj.converted   => Returns formatted json
 
+
+NOTES:
+- Your base json must have one root starting point. Check out demo.json for an example.
+
+    e.g.
+        {
+            "root_start":{
+
+
+            }
+        }
