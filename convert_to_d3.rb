@@ -58,7 +58,9 @@ class ConvertToD3
             if k.is_a?(String)
                 new_arr << convert_string(k)
             elsif k.is_a?(Hash)
-                
+                ## might be able to get rid of this
+                ## I don't think valid JSON allows a    
+                ## hash to be contained within an array
             end
         end
         new_arr
