@@ -1,0 +1,16 @@
+{
+    "Real Name":"Robert",
+    "info":{
+        "hair":"brown",
+        "eyes":"brown",
+        "hobbies":[
+            "baseball",
+            "hockey"
+        ]
+    },
+    "Stuff I hate":[
+        "rain",
+        "ignorance",
+        "magenta"
+    ]
+}
