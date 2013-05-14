@@ -26,3 +26,7 @@ NOTES:
 ```
 
 D3 Library: http://d3js.org/
+
+
+TODO:
+- Make it sort! Right now the ordering is kind of random
