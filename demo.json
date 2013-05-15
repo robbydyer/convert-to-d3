@@ -10,9 +10,11 @@
             ]
         },
         "Stuff I hate":[
-            "rainy days",
+            {"weather":["rainy days","sleet"], "weather2":{"lightning":"hurts","thunder":"is loud"} },
+            ["crap","morecrap",["oh","my","God"],{ "insanity":"yep","so deep":"I know" }],
             "ignorance",
             "magenta"
         ]
+
     }
 }

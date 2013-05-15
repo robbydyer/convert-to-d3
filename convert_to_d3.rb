@@ -53,15 +53,41 @@ class ConvertToD3
 
     def convert_array(key)
         new_arr = []
+        name_count = 0
         key.each do |k|
             new_hash = {}
             if k.is_a?(String)
                 new_arr << convert_string(k)
+
+            ## The only valid hash that can be contained within 
+            ## a JSON array is a nameless one. We have to make one up.
             elsif k.is_a?(Hash)
-                ## might be able to get rid of this
-                ## I don't think valid JSON allows a    
-                ## hash to be contained within an array
+                name = "NONAME#{name_count}"
+                new_arr << convert_hash(name,k)
+                name_count += 1
+
+            ## Here we have an embedded array within array
+            ## This is tricky. We need to create a dummy hash
+            ## with each value of the array
+            elsif k.is_a?(Array)
+                count = 0
+                hash_array = {}
+                k.each do |this_k|
+                    if this_k.is_a?(String)
+                        hash_array[this_k] = nil # This is so it does not create a child of this string
+                    else
+                        ## Since arrays or hashes that are the direct child of an
+                        ## array cannot have a name, we have to give it one. 
+                        name = "NONAME#{count}"
+                        hash_array[name] = this_k
+                        count += 1
+                    end
+                end
+                name = "NONAME#{name_count}"
+                new_arr << convert_hash(name,hash_array)
+                name_count += 1
             end
+
         end
         new_arr
     end
