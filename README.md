@@ -8,8 +8,12 @@ D3 library is included, with an example index.html to call it.
 
 Usage:
 ```
-convert_obj = ConvertToD3.new(data)  ## data can either be ruby hash or raw json data
-convert_obj.converted  ## => Returns formatted json
+require 'convert_to_d3'
+
+puts ConvertToD3(my_json).convert  # => Returns D3 formatted JSON
+
+## You can alternatively just pass a ruby hash
+puts ConvertToD3(my_hash).convert  # => Returns D3 formatted JSON
 ```
 
 NOTES:
