@@ -1,7 +1,7 @@
 convert-to-d3
 =============
 
-Convert standard JSON into format that D3 library can use
+Convert standard JSON into format that D3 library's (http://d3js.org) Collapsible Tree Layout (https://github.com/mbostock/d3/wiki/Gallery) can use. 
 
 This class converts from standard json into the format to use for the d3 library.
 D3 library is included, with an example index.html to call it.
@@ -28,8 +28,6 @@ NOTES:
             }
         }
 ```
-
-D3 Library: http://d3js.org/
 
 
 TODO:
