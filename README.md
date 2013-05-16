@@ -20,18 +20,18 @@ NOTES:
 - Your base json must have one root starting point. Check out demo.json for an example.
 
     e.g.
-```
+
 Input:
-=========
+```
 {
     "root_start":{
         "A hash":{ "stuff":"is cool", "more stuff":"is cooler" },
         "An Array":[ "things","more things" ]
     }
 }
-
+```
 Converted:
-=========
+```
 {
   "children": [
     {
