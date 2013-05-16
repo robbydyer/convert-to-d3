@@ -21,12 +21,54 @@ NOTES:
 
     e.g.
 ```
+Input:
+=========
+{
+    "root_start":{
+        "A hash":{ "stuff":"is cool", "more stuff":"is cooler" },
+        "An Array":[ "things","more things" ]
+    }
+}
+
+Converted:
+=========
+{
+  "children": [
+    {
+      "children": [
         {
-            "root_start":{
-
-
-            }
+          "name": "things"
+        },
+        {
+          "name": "more things"
         }
+      ],
+      "name": "An Array"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "name": "is cooler"
+            }
+          ],
+          "name": "more stuff"
+        },
+        {
+          "children": [
+            {
+              "name": "is cool"
+            }
+          ],
+          "name": "stuff"
+        }
+      ],
+      "name": "A hash"
+    }
+  ],
+  "name": "root_start"
+}
 ```
 
 
